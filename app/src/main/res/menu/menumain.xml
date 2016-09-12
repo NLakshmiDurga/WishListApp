@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.wishlist.murthyavanithsa.app.durga.wishlist.murthyavanithsa.app.UserTasks">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pending"
+            android:title="@string/pending"
+            android:icon="@drawable/pending"
+            android:checkable="true"
+            android:orderInCategory="100"
+            android:visible="true"/>
+        <item
+            android:id="@+id/completed"
+            android:title="@string/completed"
+            android:icon="@drawable/competed"
+            android:checkable="true"
+            android:orderInCategory="100"
+            android:visible="true"/>
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout"
+            android:icon="@drawable/logout"
+            android:checkable="true"
+            android:orderInCategory="100"
+            android:visible="true"/>
+
+    </group>
+</menu>

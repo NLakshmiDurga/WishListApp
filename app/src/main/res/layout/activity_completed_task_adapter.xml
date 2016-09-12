@@ -1,0 +1,76 @@
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/compltetaskswipe"
+    android:layout_height="60dp">
+
+    <LinearLayout
+        android:tag="Bottom4"
+        android:id="@+id/bottomwrappercompletedtasks"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/undo"
+            android:src="@drawable/undo"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:background="@color/textColorPrimary"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/dividerview" />
+        <ImageView
+            android:id="@+id/delete"
+            android:src="@drawable/delete"
+            android:layout_width="70dp"
+            android:layout_gravity="center"
+            android:background="@color/textColorPrimary"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="160dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:weightSum="1"-->
+    <!--android:id="@+id/completedtaskbottomwrapper1"-->
+    <!--android:background="@color/textColorPrimary">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/delete"-->
+    <!--android:text="Delete"-->
+    <!--android:textSize="20dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:clickable="true"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:background="@color/textColorPrimary" />-->
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:id="@+id/surface_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginStart="60dp"
+            android:textColor="@color/textColorSecondary"
+            android:padding="5dp"
+            android:id="@+id/task"
+            android:layout_marginLeft="60dp"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

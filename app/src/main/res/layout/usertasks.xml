@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/useritemslist"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"/>
+    <!-- The main content view -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- The ActionBar displayed at the top -->
+        <include layout="@layout/toolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+        <!-- The main content view where fragments are loaded -->
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:fabSize="normal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:clickable="true"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/plus"
+                app:layout_anchorGravity="bottom|right|end"
+                android:id="@+id/fab"
+                android:elevation="2dp"
+                android:layout_alignParentRight="true"
+                tools:ignore="RtlHardcoded,UnusedAttribute"
+                android:layout_alignParentBottom="true" />
+        </FrameLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nvView"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/navdrawerbackground"
+        app:itemTextAppearance="@style/NavigationDrawerStyle"
+        app:menu="@menu/menumain"
+        app:headerLayout="@layout/navigationdrawer_header"/>
+
+
+</android.support.v4.widget.DrawerLayout>
