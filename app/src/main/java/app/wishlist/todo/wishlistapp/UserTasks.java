@@ -90,7 +90,7 @@ import okhttp3.Response;
 //            textView.setText("WishList");
 //            textView.setTextSize(20);
             //To set font created a directory called assets in that font directory is created.
-            Typeface face = Typeface.createFromAsset(getAssets(), "font/Roboto-Medium.ttf");
+//            Typeface face = Typeface.createFromAsset(getAssets(), "font/Roboto-Medium.ttf");
 //            textView.setTypeface(face);
 //            textView.setTextColor(getResources().getColor(R.color.textColorPrimary));
 //        textView.setGravity(Gravity.CENTER);
@@ -114,7 +114,7 @@ import okhttp3.Response;
 //        drawerlist.setAdapter(adapter);
             mDrawerToggle = setupDrawerToggle();
             drawerLayout.addDrawerListener(mDrawerToggle);
-            face = Typeface.createFromAsset(getAssets(), "font/Roboto-Light.ttf");
+            Typeface face = Typeface.createFromAsset(getAssets(), "font/Roboto-Light.ttf");
 //      Setup drawer view
 //        drawerLayout.setDrawerListener(mDrawerToggle);
 
