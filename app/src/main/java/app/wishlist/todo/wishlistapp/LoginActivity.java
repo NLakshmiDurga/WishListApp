@@ -158,8 +158,11 @@ public class LoginActivity extends AppCompatActivity implements
 
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
-            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
-            handleSignInResult(result);
+            if (resultCode == RESULT_OK) {
+                GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+                Toast.makeText(getBaseContext(), Integer.toString(resultCode), Toast.LENGTH_LONG).show();
+                handleSignInResult(result);
+            }
         }
     }
 
