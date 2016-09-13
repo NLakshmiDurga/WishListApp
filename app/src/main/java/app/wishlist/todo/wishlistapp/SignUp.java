@@ -159,7 +159,7 @@ public class SignUp extends AppCompatActivity implements GoogleApiClient.OnConne
 //            Log.i("id",id);
         } else {
             // Signed out, show unauthenticated UI.
-            Toast.makeText(getBaseContext(), result.toString(), Toast.LENGTH_LONG).show();
+            Crashlytics.log(result.toString());
         }
     }
 
