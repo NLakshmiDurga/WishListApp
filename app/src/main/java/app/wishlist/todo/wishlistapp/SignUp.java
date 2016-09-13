@@ -171,6 +171,7 @@ public class SignUp extends AppCompatActivity implements GoogleApiClient.OnConne
         // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
         if (requestCode == RC_SIGN_IN) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            Toast.makeText(getBaseContext(),Integer.toString(resultCode), Toast.LENGTH_LONG).show();
             handleSignInResult(result);
         }
     }
